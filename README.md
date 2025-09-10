@@ -13,5 +13,5 @@ It is built using **Next.js** (frontend), **Express.js** (backend), and **Supaba
 
 1. **Clone the repository**  
    ```bash
-   git clone https://github.com/your-username/meme-quote-generator.git
-   cd meme-quote-generator
+   git clone https://github.com/your-username/meme-quote-generator.git](https://github.com/Uy-Sovannareach/MemeQuoteFrondend-
+   cd meme-quote-frondend
