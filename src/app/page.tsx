@@ -10,13 +10,12 @@ author: string;
 export default function App() {
 const [loading, setLoading] = useState(false);
 const [quote, setQuote] = useState<Quote | null>(null);
-const api = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:4000';
-
+const api = process.env.NEXT_PUBLIC_API_URL;
 
 const handleGenerate = async () => {
 setLoading(true);
 try {
-const res = await fetch(`${api}/api/quote`);
+const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/quote`);
 const data = await res.json();
 if (!res.ok) throw new Error(data.error || 'Failed to load');
 setQuote(data);
